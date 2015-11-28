@@ -17,14 +17,20 @@
 		<ul>
 			<li class="category">Website</li>
 			<li><%=link_to "Blog",root_path %></li>
-			<li>A propos</li>
+			<li><%=link_to "A propos", about_path %></li>
 		</ul>
 		<p class="sign_in">Admin</p>
 	</div>
 
 	<div id="main_content">
 		<div id="header">
-			<p>Tous les Posts</p>
+			<% if current_page?(root_path)%>
+				<p>Tous les Posts</p>
+			<% elsif current_page?(about_path)%>
+				<p>A Propos</p>
+			<% else %>
+				<%= link_to "Retourner aux posts", root_path %>
+			<% end %>
 
 			<div class="buttons">
 				<button class="button"><%= link_to "Nouveau Post", new_post_path %></button>
