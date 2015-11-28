@@ -37,7 +37,7 @@
 			<% if user_signed_in? %>
 				<div class="buttons">
 					<button class="button"><%= link_to "Nouveau Post", new_post_path %></button>
-					<button class="button">Se déconnecter</button>
+					<button class="button"><%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %></button>
 				</div>
 			<%end%>
 
