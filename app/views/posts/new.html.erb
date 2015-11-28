@@ -1,18 +1,20 @@
-<h1>New</h1>
+<div class="post_wrapper">
+<h1>Nouveau Post</h1>
 
-<%= form_for :post, url: posts_path do |f| %>
-	<p>
-	<%= f.label :title %>
-	<%= f.text_field :title %>
-	</p>
+	<%= form_for :post, url: posts_path do |f| %>
+		<p>
+		<%= f.label :titre %>
+		<%= f.text_field :title %>
+		</p>
 
-	<p>
-	<%= f.label :body %>
-	<%= f.text_field :body %>
-	</p>
-	
-	<p>
-	<%= f.submit%>
-	</p>	
+		<p>
+		<%= f.label :Texte %>
+		<%= f.text_field :body %>
+		</p>
+		
+		<p>
+		<%= f.submit%>
+		</p>	
 
-<% end %>
+	<% end %>
+</div>
