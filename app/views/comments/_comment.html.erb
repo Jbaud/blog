@@ -4,5 +4,8 @@
 		<p class="comment_body"><%= comment.body %></p>
 		<p class="comment_type"><%= comment.created_at.strftime("%d, %B , %Y") %></p>
 	</div>	
-	<p><%= link_to 'Supprimer', [comment.post, comment],method: :delete,class: "button",data: { confirm: 'Etes vous certain?' } %></p>
+	<% if user_signed_in?%>
+	<p><%= link_to 'Supprimer', [comment.post, comment],method: :delete,class: "button",data: { confirm: 'Etes vous certain?' } %>
+	</p>
+	<%end%>
 </div>
