@@ -1,4 +1,4 @@
-<div class="comment cleafix">
+<div class="comment clearfix">
 	<div class="comment_content">
 		<p class="comment_name"><%= comment.name %></p>
 		<p class="comment_body"><%= comment.body %></p>
@@ -7,5 +7,5 @@
 	<% if user_signed_in?%>
 	<p><%= link_to 'Supprimer', [comment.post, comment],method: :delete,class: "button",data: { confirm: 'Etes vous certain?' } %>
 	</p>
-	<%end%>
+	<%end%>	
 </div>
