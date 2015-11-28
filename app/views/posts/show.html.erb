@@ -6,6 +6,8 @@
 
 	<p class="date">
 		Crée le <%= @post.created_at.strftime("%d, %B , %Y")%>
+		| <%= link_to 'Modifier', edit_post_path(@post) %>
+		| <%= link_to 'Supprimer', post_path(@post),method: :delete, data:{confirm: 'Etes vous certain?'} %>
 	</p>
 
 	<p class="body">
