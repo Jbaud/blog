@@ -5,10 +5,10 @@ Projet Web 4A ESIEA
 Jules Baud
 Laure Delisle
 
-Ce blog met en application les principes vues en cours de développement Web (MVC etc...)
+===Ce blog met en application les principes vus en cours de développement Web (MVC etc...)
 
-features:
--Création de posts (CRUD c.a.d création/supp/modification)
--Commentaires (création/modification/supp)
--Création d'un compte / identification
+  features:
+  - Création de posts (CRUD c.a.d création/supp/modification)
+  - Commentaires (création/modification/supp)
+  - Création d'un compte / identification
 
